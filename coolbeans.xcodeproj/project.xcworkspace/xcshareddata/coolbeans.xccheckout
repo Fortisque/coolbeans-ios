@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FBC42410-49DD-4094-A67A-C52BF1844EF2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>coolbeans</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>706D00028370ACABE3BB7CCF54E7BEB36FECE606</key>
+		<string>github.com:Fortisque/coolbeans-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>coolbeans.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>706D00028370ACABE3BB7CCF54E7BEB36FECE606</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Fortisque/coolbeans-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>706D00028370ACABE3BB7CCF54E7BEB36FECE606</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>706D00028370ACABE3BB7CCF54E7BEB36FECE606</string>
+			<key>IDESourceControlWCCName</key>
+			<string>coolbeans</string>
+		</dict>
+	</array>
+</dict>
+</plist>

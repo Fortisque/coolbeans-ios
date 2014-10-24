@@ -28,6 +28,9 @@
 		9951138E19F9FC6300597441 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9951138D19F9FC6300597441 /* Accounts.framework */; };
 		9951139119FA071600597441 /* RecommendationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9951139019FA071600597441 /* RecommendationTableViewController.m */; };
 		9951139419FA090800597441 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9951139319FA090800597441 /* LandingViewController.m */; };
+		9951139719FA185300597441 /* CreateBeanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9951139619FA185300597441 /* CreateBeanViewController.m */; };
+		9951139B19FA266E00597441 /* BeanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9951139919FA266E00597441 /* BeanTableViewCell.m */; };
+		9951139C19FA266E00597441 /* BeanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9951139A19FA266E00597441 /* BeanTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,11 @@
 		9951139019FA071600597441 /* RecommendationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendationTableViewController.m; sourceTree = "<group>"; };
 		9951139219FA090800597441 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
 		9951139319FA090800597441 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		9951139519FA185300597441 /* CreateBeanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateBeanViewController.h; sourceTree = "<group>"; };
+		9951139619FA185300597441 /* CreateBeanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateBeanViewController.m; sourceTree = "<group>"; };
+		9951139819FA266E00597441 /* BeanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeanTableViewCell.h; sourceTree = "<group>"; };
+		9951139919FA266E00597441 /* BeanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeanTableViewCell.m; sourceTree = "<group>"; };
+		9951139A19FA266E00597441 /* BeanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeanTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,10 +147,15 @@
 				9951135819F9FB0400597441 /* ViewController.h */,
 				9951135919F9FB0400597441 /* ViewController.m */,
 				9951135B19F9FB0400597441 /* Main.storyboard */,
+				9951139519FA185300597441 /* CreateBeanViewController.h */,
+				9951139619FA185300597441 /* CreateBeanViewController.m */,
 				9951139219FA090800597441 /* LandingViewController.h */,
 				9951139319FA090800597441 /* LandingViewController.m */,
 				9951138F19FA071600597441 /* RecommendationTableViewController.h */,
 				9951139019FA071600597441 /* RecommendationTableViewController.m */,
+				9951139819FA266E00597441 /* BeanTableViewCell.h */,
+				9951139919FA266E00597441 /* BeanTableViewCell.m */,
+				9951139A19FA266E00597441 /* BeanTableViewCell.xib */,
 				9951135E19F9FB0400597441 /* Images.xcassets */,
 				9951136019F9FB0400597441 /* LaunchScreen.xib */,
 				9951135119F9FB0400597441 /* Supporting Files */,
@@ -256,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9951139C19FA266E00597441 /* BeanTableViewCell.xib in Resources */,
 				9951135D19F9FB0400597441 /* Main.storyboard in Resources */,
 				9951136219F9FB0400597441 /* LaunchScreen.xib in Resources */,
 				9951137919F9FB6000597441 /* BuiltIO.bundle in Resources */,
@@ -277,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9951139719FA185300597441 /* CreateBeanViewController.m in Sources */,
+				9951139B19FA266E00597441 /* BeanTableViewCell.m in Sources */,
 				9951135A19F9FB0400597441 /* ViewController.m in Sources */,
 				9951139419FA090800597441 /* LandingViewController.m in Sources */,
 				9951135719F9FB0400597441 /* AppDelegate.m in Sources */,

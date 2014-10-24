@@ -7,15 +7,31 @@
 //
 
 #import "RecommendationTableViewController.h"
+#import <BuiltIO/BuiltIO.h>
+#import "BeanTableViewCell.h"
 
 @interface RecommendationTableViewController ()
 
+@property (strong, nonatomic) NSArray *beans;
 @end
 
 @implementation RecommendationTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    BuiltQuery *query = [BuiltQuery queryWithClassUID:@"bean"];
+    
+    [query exec:^(QueryResult *result, ResponseType type) {
+        // the query has executed successfully.
+        // [result getResult] will contain a list of objects that satisfy the conditions
+        // here's the object we just created
+        _beans = [result getResult];
+        [self.tableView reloadData];
+    } onError:^(NSError *error, ResponseType type) {
+        // query execution failed.
+        // error.userinfo contains more details regarding the same
+    }];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,26 +48,37 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [_beans count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *beanTableIdentifier = @"BeanTableViewCell";
     
-    // Configure the cell...
+    BeanTableViewCell *cell = (BeanTableViewCell *)[tableView dequeueReusableCellWithIdentifier:beanTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:beanTableIdentifier owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    cell.businessLabel.text = [[_beans objectAtIndex:indexPath.row] objectForKey:@"business"];
+    //cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    cell.commentLabel.text = [[_beans objectAtIndex:indexPath.row] objectForKey:@"comment"];
     
     return cell;
 }
-*/
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 120;
+}
 
 /*
 // Override to support conditional editing of the table view.
