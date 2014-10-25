@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BeanTableViewCell.h"
 
-@interface CreateBeanViewController : UIViewController
+@interface CreateBeanViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+
 @property (strong, nonatomic) IBOutlet UITextField *businessField;
 @property (strong, nonatomic) IBOutlet UITextView *commentField;
 - (IBAction)submitBean:(id)sender;
